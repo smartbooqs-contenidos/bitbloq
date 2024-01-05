@@ -3,8 +3,7 @@ import requests
 html = requests.get("https://bitbloq.cc").text
 
 html = html.replace("/_next/", "https://bitbloq.cc/_next/")
-print(html)
 
-file = open("docs/index.html", "w")
+file = open("docs/site.html", "w")
 file.write(html)
 file.close()
